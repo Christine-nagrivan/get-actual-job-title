@@ -1,4 +1,4 @@
-package com.example.get_actual_job_title.job.title.functions;
+package com.example.get_actual_job_title.job.title.utils;
 
 import com.example.get_actual_job_title.job.title.dto.JobTitle;
 import org.springframework.util.StringUtils;
@@ -9,7 +9,7 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.Objects;
 
-public interface JobTitleFunctions {
+public interface JobTitleUtils {
     List<String> GRADES = List.of("Junior", "Middle", "Senior");
 
     default JobTitle jobTitleLast(List<JobTitle> jobTitleList) {

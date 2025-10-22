@@ -11,7 +11,7 @@ import org.mapstruct.Mapping;
 //            "starttime": "2022-08-01"
 //        }
 
-@Mapper
+@Mapper(componentModel = "spring")
 public interface JobTitleMapper {
 
     @Mapping(target = "jobTitleName", source = "jobTitle.jobTitleName")

@@ -9,5 +9,4 @@ public class GetActualJobTitleApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(GetActualJobTitleApplication.class, args);
 	}
-
 }
