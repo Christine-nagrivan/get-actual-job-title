@@ -1,4 +1,4 @@
-package com.example.get_actual_job_title.job.title;
+package com.example.get_actual_job_title.job.title.functions;
 
 import com.example.get_actual_job_title.job.title.dto.JobTitle;
 import org.springframework.util.StringUtils;

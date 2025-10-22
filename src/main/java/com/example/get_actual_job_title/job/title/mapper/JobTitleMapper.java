@@ -12,7 +12,7 @@ import org.mapstruct.Mapping;
 //        }
 
 @Mapper
-public interface JobTitleMap {
+public interface JobTitleMapper {
 
     @Mapping(target = "jobTitleName", source = "jobTitle.jobTitleName")
     @Mapping(target = "startTimeLast", source = "jobTitle.startTime")
