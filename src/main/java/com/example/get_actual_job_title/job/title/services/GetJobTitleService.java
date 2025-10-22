@@ -10,7 +10,11 @@ import java.util.List;
 
 @Service
 public abstract class GetJobTitleService implements JobTitleFunctions {
-    private JobTitleMapper jobTitleMapper;
+    private final JobTitleMapper jobTitleMapper;
+
+    protected GetJobTitleService(JobTitleMapper jobTitleMapper) {
+        this.jobTitleMapper = jobTitleMapper;
+    }
 
     public JobTitleResult getJobTitleLast(List<JobTitle> jobTitleList) {
         return jobTitleMapper.jobTitleResultMap(this.jobTitleLast(jobTitleList));
